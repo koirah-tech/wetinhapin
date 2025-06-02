@@ -1,7 +1,7 @@
-import localFont from "next/dist/compiled/@next/font/dist/local";
+import localFont from "next/font/local";
 
 import "@workspace/ui/globals.css"
-import { Providers } from "@/components/providers"
+import { Theme } from "@/components/Theme"
 
 const inter = localFont({
     src: "./fonts/InterVF.ttf",
@@ -10,7 +10,7 @@ const inter = localFont({
 });
 
 const montserrat = localFont({
-    src: "./fonts/MontserratVF.ttf",
+    src: "./fonts/Montserrat.ttf",
     variable: "--font-montserrat",
     weight: "100, 200, 300, 400, 500, 600, 700, 800, 900",
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${montserrat.variable} font-sans antialiased `}
       >
-        <Providers>{children}</Providers>
+        <Theme>{children}</Theme>
       </body>
     </html>
   )
