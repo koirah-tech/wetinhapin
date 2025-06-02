@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 import { Button } from "@workspace/ui/components/button"
+import ThemeToggle from "@workspace/ui/components/common/themeToggle";
 
 export default function Page() {
   return (
@@ -9,6 +10,7 @@ export default function Page() {
           <h1 className="text-2xl font-bold">Customer Portal</h1>
           <Button size="sm">Button</Button>
           <Link href="/about">About</Link>
+            <ThemeToggle />
         </div>
       </div>
   )
