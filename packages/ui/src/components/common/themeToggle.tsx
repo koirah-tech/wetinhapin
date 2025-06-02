@@ -11,7 +11,7 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger
-} from "@workspace/ui/components/dropdown-menu.js";
+} from '@workspace/ui/components/dropdown-menu.js';
 
 function ThemeToggle() {
     const { setTheme } = useTheme()
