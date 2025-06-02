@@ -1,17 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import localFont from "next/dist/compiled/@next/font/dist/local";
 
 import "@workspace/ui/globals.css"
 import { Providers } from "@/components/providers"
 
-const fontSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+const inter = localFont({
+    src: "./fonts/InterVF.ttf",
+    variable: "--font-inter",
+    weight: "100, 200, 300, 400, 500, 600, 700, 800, 900",
+});
 
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
+const montserrat = localFont({
+    src: "./fonts/MontserratVF.ttf",
+    variable: "--font-montserrat",
+    weight: "100, 200, 300, 400, 500, 600, 700, 800, 900",
+});
 
 export default function RootLayout({
   children,
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased `}
+        className={`${inter.variable} ${montserrat.variable} font-sans antialiased `}
       >
         <Providers>{children}</Providers>
       </body>
