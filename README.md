@@ -2,7 +2,10 @@
 
 **WetinHapin** is an open-source, fully featured helpdesk platform designed for organizations, institutions, and companies across Africa and beyond. It allows teams to handle internal or external support requests, track ticket lifecycles, collaborate across departments, and customize workflows.
 
-> 🔧 Self-hostable · 🪄 Built with modern tools · 💬 Designed for real-world teams · 🇸🇱 Made for Africa
+> 🔧 Self-hostable ·  
+> 🪄 Built with modern tools ·   
+> 💬 Designed for real-world teams ·   
+> 🇸🇱 Made for Africa
 
 ---
 
