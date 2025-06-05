@@ -9,6 +9,21 @@
 
 ---
 
+## Overview
+
+This repository uses a [Turborepo](https://turbo.build/repo) + PNPM setup to
+organize multiple Next.js applications and shared packages. The root
+`package.json` exposes common scripts:
+
+```bash
+pnpm dev     # Run all apps in development mode
+pnpm build   # Build all apps and packages
+pnpm lint    # Lint the entire monorepo
+pnpm format  # Format source files with Prettier
+```
+
+See each app's README for project-specific commands.
+
 ## 🧱 Monorepo Structure
 
 This project is built using [Turborepo](https://turbo.build/repo) and follows a modern mono-repo architecture.
@@ -38,6 +53,15 @@ wetinhapin/
 - **Email:** Resend · React Email
 - **Other:** Zod · TypeScript · Turborepo, and more...
 
+## Key Packages & Files
+
+- `packages/ui` – Shared UI components (see `ThemeToggle` for an example)
+- `packages/db-schema` – Supabase schema, seeds, and auth rules
+- `packages/eslint-config` and `packages/typescript-config` – Linting and TS
+  settings reused across apps
+- `turbo.json` – Defines the build pipeline and caching for the monorepo
+- Each app under `apps/` has its own README with specific features and setup
+
 ## 🔓 License
 
 This software is licensed under the **AGPL-3.0 License**.
@@ -52,6 +76,13 @@ Please see the `CONTRIBUTING.md` file for:
 - Code style guidelines
 - Pull request process
 - ...
+
+## Things to Explore Next
+
+- Review the Supabase configuration in `packages/db-schema`
+- Check out the reusable components in `packages/ui`
+- Learn how `turbo.json` orchestrates tasks across apps
+- Confirm the license in `LICENSE` (currently MIT text but AGPL-3.0 noted here)
 
 ## 🗺️ Roadmap (MVP)
 
