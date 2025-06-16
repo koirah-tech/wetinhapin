@@ -12,8 +12,8 @@ import {MissingEnvVarError} from "@/utils/errors";
  * const apiUrl = assertEnvVar("API_URL");
  */
 export function assertEnvVar(key: string): string {
-    const value = process.env[key];
-    if (!value) throw new MissingEnvVarError(key);
+    const value = key;
+    if (!value) throw new MissingEnvVarError(value);
 
     return value;
 }
