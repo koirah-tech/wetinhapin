@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import { Button } from "@workspace/ui/components/button"
 import ThemeToggle from "@workspace/ui/components/common/themeToggle";
+import Carousel from "@/components/Carousel";
 
 export default function Page() {
 
@@ -13,6 +14,7 @@ export default function Page() {
         <Button size="sm">Button</Button>
           <ThemeToggle />
         <Link href="/about">About</Link>
+        <Carousel baseWidth={500} autoplay={true} loop/>
       </div>
     </div>
   )
