@@ -25,7 +25,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${montserrat.variable} font-sans antialiased `}
       >
-        <Theme>{children}</Theme>
+        <main
+          className="min-h-screen my-25 items-center"
+        >
+          <Theme>{children}</Theme>
+        </main>
+        
       </body>
     </html>
   )
